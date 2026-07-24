@@ -46,6 +46,9 @@ export function HoneycombCanvas() {
       }
     };
 
+    // whole-grid parallax offset, eased toward the cursor
+    const par = { x: 0, y: 0 };
+
     const hexPath = (x: number, y: number) => {
       ctx.beginPath();
       for (let i = 0; i < 6; i++) {
@@ -86,24 +89,39 @@ export function HoneycombCanvas() {
       mouse.y += (mouse.ty - mouse.y) * 0.09;
       glow += ((mouse.over ? 1 : 0) - glow) * 0.06;
 
+      // the comb itself follows the cursor: a slow full-grid drift...
+      const ptx = mouse.seen ? ((mouse.x - W / 2) / W) * 16 * glow : 0;
+      const pty = mouse.seen ? ((mouse.y - H / 2) / H) * 16 * glow : 0;
+      par.x += (ptx - par.x) * 0.04;
+      par.y += (pty - par.y) * 0.04;
+
       ctx.clearRect(0, 0, W, H);
       ctx.lineWidth = 1;
       for (const c of centers) {
         const shimmer = reduced ? 0 : Math.sin(time * 0.45 + c.phase) * 0.017;
-        hexPath(c.x, c.y);
+        let x = c.x + par.x;
+        let y = c.y + par.y;
+        let k = 0;
+        if (glow > 0.02 && mouse.seen) {
+          const d = Math.hypot(x - mouse.x, y - mouse.y);
+          k = Math.max(0, 1 - d / 250);
+          // ...and cells near it lean gently toward the cursor
+          if (k > 0.02 && d > 1) {
+            const pull = k * k * 9 * glow;
+            x += ((mouse.x - x) / d) * pull;
+            y += ((mouse.y - y) / d) * pull;
+          }
+        }
+        hexPath(x, y);
         ctx.strokeStyle = `rgba(${INK}, ${0.042 + shimmer})`;
         ctx.stroke();
-        if (glow > 0.02 && mouse.seen) {
-          const d = Math.hypot(c.x - mouse.x, c.y - mouse.y);
-          const k = Math.max(0, 1 - d / 230);
-          if (k > 0.02) {
-            const g = k * k * glow;
-            ctx.strokeStyle = `rgba(${AMBER}, ${g * 0.55})`;
-            ctx.stroke();
-            if (g > 0.2) {
-              ctx.fillStyle = `rgba(${AMBER}, ${(g - 0.2) * 0.07})`;
-              ctx.fill();
-            }
+        if (k > 0.02) {
+          const g = k * k * glow;
+          ctx.strokeStyle = `rgba(${AMBER}, ${g * 0.55})`;
+          ctx.stroke();
+          if (g > 0.2) {
+            ctx.fillStyle = `rgba(${AMBER}, ${(g - 0.2) * 0.07})`;
+            ctx.fill();
           }
         }
       }

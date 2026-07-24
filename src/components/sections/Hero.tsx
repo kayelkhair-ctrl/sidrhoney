@@ -26,7 +26,6 @@ export function Hero({
   return (
     <section className="hero" id="top">
       <HoneycombCanvas />
-      <div className="hero__frame" aria-hidden="true" />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className="hero__mark" src="/media/logo-mark.png" alt="" />
       {eyebrow ? <div className="hero__eyebrow">{eyebrow}</div> : null}

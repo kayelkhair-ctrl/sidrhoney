@@ -224,13 +224,6 @@ h3 {
   pointer-events: none;
 }
 
-.hero__frame {
-  position: absolute;
-  inset: calc(var(--nav-h) + 24px) clamp(16px, 3.5vw, 48px) 24px;
-  border: 1px solid rgba(35, 24, 13, 0.22);
-  pointer-events: none;
-  z-index: 1;
-}
 
 .hero::after {
   content: "";
@@ -255,26 +248,22 @@ h3 {
   justify-items: center;
 }
 
-/* seal breaks the top frame line; eyebrow mirrors it on the bottom line */
+/* seal floats top-centre; eyebrow mirrors it at the bottom */
 .hero__mark {
   position: absolute;
-  top: calc(var(--nav-h) + 24px);
+  top: calc(var(--nav-h) + 30px);
   left: 50%;
-  translate: -50% -50%;
+  translate: -50% 0;
   height: clamp(54px, 6.5vw, 72px);
   width: auto;
-  background: var(--bg);
-  padding-inline: 24px;
   z-index: 2;
 }
 
 .hero__eyebrow {
   position: absolute;
-  bottom: 24px;
+  bottom: 34px;
   left: 50%;
-  translate: -50% 50%;
-  background: var(--bg);
-  padding-inline: 22px;
+  translate: -50% 0;
   font-size: 11px;
   letter-spacing: 0.36em;
   text-transform: uppercase;
@@ -349,18 +338,11 @@ h3 {
   .hero__eyebrow {
     font-size: 9px;
     letter-spacing: 0.24em;
-  }
-
-  .hero__frame {
-    inset: calc(var(--nav-h) + 18px) 12px 18px;
+    bottom: 22px;
   }
 
   .hero__mark {
-    top: calc(var(--nav-h) + 18px);
-  }
-
-  .hero__eyebrow {
-    bottom: 18px;
+    top: calc(var(--nav-h) + 20px);
   }
 }
 
