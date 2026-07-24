@@ -1,0 +1,28 @@
+/* SidrHoney design tokens — warm ivory editorial palette.
+   Quiet luxury: espresso ink on ivory, honey amber used sparingly. */
+:root {
+  --bg: #faf6ed;
+  --bg-soft: #f3ecdd;
+  --ink: #23180d;
+  --ink-soft: #6a5b47;
+  --amber: #c68a2a;
+  --amber-bright: #e9a83b;
+  --honey: #d99a33;
+  --hairline: rgba(35, 24, 13, 0.14);
+
+  --dark: #1d1309;
+  --dark-deep: #140d06;
+  --cream: #f2e8d2;
+  --cream-dim: #c9bda2;
+
+  --nav-h: 72px;
+  --radius: 18px;
+  --pad-x: clamp(20px, 5vw, 72px);
+  --measure: 1180px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --nav-h: 60px;
+  }
+}

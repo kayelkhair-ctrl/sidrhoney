@@ -1,0 +1,173 @@
+{
+  "root": { "props": {} },
+  "content": [
+    {
+      "type": "Hero",
+      "props": {
+        "id": "Hero-home",
+        "arabic": "عسل السدر",
+        "eyebrow": "London · Importers of fine foods",
+        "title": "The honey the trade kept",
+        "titleAccent": "to itself.",
+        "lead": "For years we have brought raw sidr honey into Britain by the container and sold it quietly to the trade. Now, for the first time, we are filling jars with our own name on them.",
+        "primaryLabel": "See the collection",
+        "primaryHref": "#collection",
+        "secondaryLabel": "Wholesale enquiries",
+        "secondaryHref": "#contact"
+      }
+    },
+    {
+      "type": "LabelStack",
+      "props": {
+        "id": "LabelStack-home",
+        "promises": [
+          {
+            "title": "We are the importer",
+            "text": "No middlemen and no mystery. We buy at source, by the container, from harvests we know — the same supply the trade has relied on for years.",
+            "icon": "ship"
+          },
+          {
+            "title": "Raw & unheated",
+            "text": "Straight from the comb to the jar. Never pasteurised and never blended, so it arrives exactly as the bees made it.",
+            "icon": "drop"
+          },
+          {
+            "title": "Single origin",
+            "text": "One region, one bloom, one harvest per jar. Sidr honey from the sidr tree — not a 'honey blend' from nowhere in particular.",
+            "icon": "mountain"
+          },
+          {
+            "title": "Nothing added",
+            "text": "No syrups, no additives, no clever tricks. If it is not from the hive, it is not in the jar.",
+            "icon": "shield"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ImageBand",
+      "props": {
+        "id": "ImageBand-drizzle",
+        "image": "/media/honey-drizzle.webp",
+        "alt": "Dark amber honey drizzling onto raw honeycomb",
+        "caption": "Raw from the comb"
+      }
+    },
+    {
+      "type": "Collection",
+      "props": {
+        "id": "Collection-home",
+        "kicker": "for your table —",
+        "title": "The Collection",
+        "products": [
+          {
+            "name": "Royal Sidr Honey",
+            "tagline": "Dark, complex, unmistakable — the flagship of the house.",
+            "price": "",
+            "ctaLabel": "Reserve a jar",
+            "ctaHref": "#contact",
+            "image": "/media/sidr-jar.webp",
+            "look": "amber"
+          },
+          {
+            "name": "Black Seed Honey",
+            "tagline": "Raw sidr honey met with cold-pressed black seed.",
+            "price": "",
+            "ctaLabel": "Reserve a jar",
+            "ctaHref": "#contact",
+            "image": "/media/black-seed.webp",
+            "look": "night"
+          },
+          {
+            "name": "Ajwa Dates",
+            "tagline": "The dates of Madinah — soft, dark and unhurried.",
+            "price": "",
+            "ctaLabel": "Reserve a box",
+            "ctaHref": "#contact",
+            "image": "/media/ajwa-dates.webp",
+            "look": "olive"
+          },
+          {
+            "name": "The Sunnah Set",
+            "tagline": "Sidr honey, black seed and ajwa together — a gift of the tradition.",
+            "price": "",
+            "ctaLabel": "Reserve a set",
+            "ctaHref": "#contact",
+            "image": "/media/sunnah-set.webp",
+            "look": "gold"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Story",
+      "props": {
+        "id": "Story-home",
+        "kicker": "Our story",
+        "title": "Built on decades in the trade, not on a marketing deck.",
+        "paragraphs": [
+          {
+            "text": "Long before this website existed, our founder was landing containers of fine foods in London and supplying the shops and wholesalers your family already buys from. The trade knew his name. The public never did."
+          },
+          {
+            "text": "This house is that same supply, opened to your table — the same harvests, the same standards, the same handshake. Just a smaller jar."
+          }
+        ],
+        "stats": [
+          { "num": "Decades", "label": "In the trade" },
+          { "num": "Containers", "label": "Not pallets" },
+          { "num": "At source", "label": "Our one standard" }
+        ],
+        "image": "/media/warehouse-v2.webp",
+        "imageAlt": "Wooden crates and drums stacked in a warm, sunlit import warehouse"
+      }
+    },
+    {
+      "type": "ImageBand",
+      "props": {
+        "id": "ImageBand-valley",
+        "image": "/media/sidr-valley.webp",
+        "alt": "Ancient sidr trees in a golden valley at sunset",
+        "caption": "Where the sidr blossoms"
+      }
+    },
+    {
+      "type": "Faq",
+      "props": {
+        "id": "Faq-home",
+        "title": "Questions, answered",
+        "items": [
+          {
+            "question": "How do I know your sidr honey is genuine?",
+            "answer": "Because we are the importer. Most sidr honey sold in Britain passes through many hands before it reaches a jar; ours passes through one. We buy directly from harvests we know, every batch is traceable to its region and season, and we are happy to share batch details on request."
+          },
+          {
+            "question": "What is sidr honey?",
+            "answer": "A rare, dark honey made by bees that feed on the blossom of the sidr tree (Ziziphus spina-christi), prized across the Muslim world for centuries. A single harvest happens only a few weeks a year, which is why genuine sidr honey is scarce — and why so much of what is sold under the name is not the real thing."
+          },
+          {
+            "question": "Do you sell wholesale?",
+            "answer": "Yes — wholesale is where we come from. If you run a shop, restaurant or distribution business, get in touch for trade pricing by the case or by the pallet."
+          },
+          {
+            "question": "When can I order online?",
+            "answer": "Very soon. The first retail jars are being prepared now. Join the waiting list and you will hear from us before anyone else does."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "id": "Contact-home",
+        "kicker": "Get in touch",
+        "title": "The first jars land soon.",
+        "text": "Join the list for first pick of the flagship harvest — or talk to us about trade supply, which we have been doing for decades.",
+        "primaryLabel": "Join the waiting list",
+        "primaryHref": "mailto:hello@sidrhoneyltd.com?subject=Waiting%20list",
+        "secondaryLabel": "Wholesale enquiries",
+        "secondaryHref": "mailto:hello@sidrhoneyltd.com?subject=Wholesale%20enquiry"
+      }
+    }
+  ]
+}

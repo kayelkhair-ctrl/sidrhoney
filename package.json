@@ -1,0 +1,23 @@
+{
+  "name": "sidrhoney",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3010",
+    "edit": "next dev -p 3010",
+    "build": "next build",
+    "deploy": "node scripts/deploy.mjs"
+  },
+  "dependencies": {
+    "@puckeditor/core": "^0.22.0",
+    "next": "^16.2.10",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "basic-ftp": "^6.0.1",
+    "typescript": "^5.6.3"
+  }
+}
