@@ -151,8 +151,8 @@
             "answer": "Yes — wholesale is where we come from. If you run a shop, restaurant or distribution business, get in touch for trade pricing by the case or by the pallet."
           },
           {
-            "question": "When can I order online?",
-            "answer": "Very soon. The first retail jars are being prepared now. Join the waiting list and you will hear from us before anyone else does."
+            "question": "How do I order?",
+            "answer": "The quickest way is WhatsApp — message us on +44 7554 246083 and we will sort you out, whether it is a single jar or a pallet. You can also email sidrhoneyltd@gmail.com, or visit the warehouse at Unit 2D, 10–24 Standard Road, Park Royal, London NW10 6EU."
           }
         ]
       }
@@ -163,11 +163,11 @@
         "id": "Contact-home",
         "kicker": "Get in touch",
         "title": "The first jars land soon.",
-        "text": "Join the list for first pick of the flagship harvest — or talk to us about trade supply, which we have been doing for decades.",
-        "primaryLabel": "Join the waiting list",
-        "primaryHref": "mailto:hello@sidrhoneyltd.com?subject=Waiting%20list",
-        "secondaryLabel": "Wholesale enquiries",
-        "secondaryHref": "mailto:hello@sidrhoneyltd.com?subject=Wholesale%20enquiry"
+        "text": "Order directly on WhatsApp — retail or wholesale, London and across the UK — or email us and we will come straight back to you.",
+        "primaryLabel": "Order on WhatsApp",
+        "primaryHref": "https://wa.me/447554246083",
+        "secondaryLabel": "Email us",
+        "secondaryHref": "mailto:sidrhoneyltd@gmail.com"
       }
     }
   ]

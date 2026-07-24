@@ -25,11 +25,10 @@ export function Footer() {
         </div>
         <div>
           <h4>Contact</h4>
+          <a href={SITE.whatsapp}>WhatsApp: {SITE.phone}</a>
           <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
-          {SITE.phone ? (
-            <a href={`tel:${SITE.phone.replace(/\s/g, "")}`}>{SITE.phone}</a>
-          ) : null}
           <a href="/#contact">Wholesale enquiries</a>
+          <p style={{ margin: "12px 0 0" }}>{SITE.address}</p>
         </div>
       </div>
       <div className="footer__legal">

@@ -16,9 +16,10 @@ export default function ProductsPage() {
           <div className="collection__kicker">everything we carry —</div>
           <h1 className="catalog__title">All Products</h1>
           <p className="catalog__lead">
-            What we import and supply, retail and wholesale. If you are looking
-            for something you do not see, ask — if it is good, we can usually
-            land it.
+            What we import and supply — retail and wholesale, London and across
+            the UK. Tap any product to ask about it on WhatsApp. If you are
+            looking for something you do not see, ask — if it is good, we can
+            usually land it.
           </p>
         </div>
         <ProductBrowser products={products as CatalogProduct[]} />

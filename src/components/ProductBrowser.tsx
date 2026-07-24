@@ -73,9 +73,11 @@ export function ProductBrowser({ products }: { products: CatalogProduct[] }) {
             {p.note ? <p className="item__note">{p.note}</p> : null}
             <a
               className="item__cta"
-              href={`mailto:${SITE.email}?subject=${encodeURIComponent(
-                `Enquiry: ${p.name}${p.size ? ` (${p.size})` : ""}`
+              href={`${SITE.whatsapp}?text=${encodeURIComponent(
+                `Salaam — I'd like to ask about: ${p.name}`
               )}`}
+              target="_blank"
+              rel="noopener"
             >
               Enquire →
             </a>
