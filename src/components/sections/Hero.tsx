@@ -1,7 +1,9 @@
 import { HoneycombCanvas } from "@/components/HoneycombCanvas";
+import { HoneyDrip } from "@/components/art";
 
 export type HeroProps = {
   arabic: string;
+  arabicImage?: string;
   eyebrow: string;
   title: string;
   titleAccent: string;
@@ -14,6 +16,7 @@ export type HeroProps = {
 
 export function Hero({
   arabic,
+  arabicImage,
   eyebrow,
   title,
   titleAccent,
@@ -30,13 +33,23 @@ export function Hero({
       <img className="hero__mark" src="/media/logo-mark.png" alt="" />
       {eyebrow ? <div className="hero__eyebrow">{eyebrow}</div> : null}
       <div className="hero__inner">
-        {arabic ? (
+        {arabic || arabicImage ? (
           <div className="hero__arabic">
             <span className="hero__rule" aria-hidden="true" />
             <span className="hero__diamond" aria-hidden="true" />
-            <span className="hero__arabic-text" lang="ar" dir="rtl">
-              {arabic}
-            </span>
+            {arabicImage ? (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img className="hero__arabic-img" src={arabicImage} alt={arabic} />
+            ) : (
+              <span className="hero__arabic-wrap">
+                <span className="hero__arabic-text" lang="ar" dir="rtl">
+                  {arabic}
+                </span>
+                <HoneyDrip className="hero__drip hero__drip--1" gid="hdrip1" />
+                <HoneyDrip className="hero__drip hero__drip--2" gid="hdrip2" />
+                <HoneyDrip className="hero__drip hero__drip--3" gid="hdrip3" />
+              </span>
+            )}
             <span className="hero__diamond" aria-hidden="true" />
             <span className="hero__rule" aria-hidden="true" />
           </div>

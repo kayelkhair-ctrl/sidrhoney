@@ -25,6 +25,10 @@ export const config: Config<{ components: Props }> = {
       label: "Top banner",
       fields: {
         arabic: { type: "text", label: "Arabic line (optional)" },
+        arabicImage: {
+          type: "text",
+          label: "Arabic calligraphy image (optional — replaces the plain Arabic text)",
+        },
         eyebrow: { type: "text", label: "Small line above the title" },
         title: { type: "text", label: "Big title" },
         titleAccent: { type: "text", label: "Golden last words of the title" },
@@ -36,6 +40,7 @@ export const config: Config<{ components: Props }> = {
       },
       defaultProps: {
         arabic: "",
+        arabicImage: "",
         eyebrow: "",
         title: "",
         titleAccent: "",

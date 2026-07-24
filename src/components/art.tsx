@@ -100,6 +100,22 @@ export function Jar({
   );
 }
 
+/* Honey droplet that hangs off the hero's Arabic lettering */
+export function HoneyDrip({ className, gid }: { className?: string; gid: string }) {
+  return (
+    <svg className={className} viewBox="0 0 10 26" fill="none" aria-hidden="true" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id={gid} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#dfa63d" />
+          <stop offset="1" stopColor="#925c08" />
+        </linearGradient>
+      </defs>
+      <path d="M5 0C5.4 8 9 13 9 19.5A4 4 0 0 1 1 19.5C1 13 4.6 8 5 0Z" fill={`url(#${gid})`} />
+      <ellipse cx="6.4" cy="18.6" rx="0.9" ry="1.7" fill="#ffffff" opacity="0.35" />
+    </svg>
+  );
+}
+
 /* Small icons for the promise rows */
 export function PromiseIcon({ name }: { name: string }) {
   const common = { stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, fill: "none" };

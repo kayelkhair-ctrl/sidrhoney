@@ -6,6 +6,7 @@
       "props": {
         "id": "Hero-home",
         "arabic": "عسل السدر",
+        "arabicImage": "/media/arabic-honey.png",
         "eyebrow": "London · Importers of fine foods",
         "title": "The honey the trade kept",
         "titleAccent": "to itself.",
