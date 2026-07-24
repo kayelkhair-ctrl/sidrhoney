@@ -1,3 +1,5 @@
+import { HoneycombCanvas } from "@/components/HoneycombCanvas";
+
 export type HeroProps = {
   arabic: string;
   eyebrow: string;
@@ -23,6 +25,7 @@ export function Hero({
 }: HeroProps) {
   return (
     <section className="hero" id="top">
+      <HoneycombCanvas />
       <div className="hero__frame" aria-hidden="true" />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className="hero__mark" src="/media/logo-mark.png" alt="" />
