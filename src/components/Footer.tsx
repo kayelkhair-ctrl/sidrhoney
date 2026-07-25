@@ -17,8 +17,8 @@ export function Footer() {
         </div>
         <div>
           <h4>Visit</h4>
-          <a href="/#collection">The Collection</a>
-          <a href="/products/">All Products</a>
+          <a href="/products/">Our Products</a>
+          <a href="/blog/">Journal</a>
           <a href="/#promise">Our Promise</a>
           <a href="/#story">Our Story</a>
           <a href="/#faq">Questions</a>

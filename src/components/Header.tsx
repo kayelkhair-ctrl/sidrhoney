@@ -7,9 +7,8 @@ export function Header() {
         <span>SIDR HONEY</span>
       </a>
       <nav className="nav__links" aria-label="Main">
-        <a href="/#promise">The Standard</a>
-        <a href="/#collection">Collection</a>
-        <a href="/products/">All Products</a>
+        <a href="/products/">Products</a>
+        <a href="/blog/">Journal</a>
         <a href="/#story">Story</a>
         <a href="/#faq">FAQ</a>
       </nav>

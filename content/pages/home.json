@@ -46,15 +46,6 @@
       }
     },
     {
-      "type": "ImageBand",
-      "props": {
-        "id": "ImageBand-drizzle",
-        "image": "/media/honey-drizzle.webp",
-        "alt": "Dark amber honey drizzling onto raw honeycomb",
-        "caption": "Raw from the comb"
-      }
-    },
-    {
       "type": "Collection",
       "props": {
         "id": "Collection-home",
@@ -62,39 +53,39 @@
         "title": "The Collection",
         "products": [
           {
-            "name": "Royal Sidr Honey",
+            "name": "Pure Mountain Sidr Honey",
             "tagline": "Dark, complex, unmistakable — the flagship of the house.",
             "price": "",
-            "ctaLabel": "Reserve a jar",
-            "ctaHref": "#contact",
+            "ctaLabel": "Discover",
+            "ctaHref": "/products/sidr-honey/",
             "image": "/media/sidr-jar.webp",
             "look": "amber"
           },
           {
             "name": "Black Seed Honey",
-            "tagline": "Raw sidr honey met with cold-pressed black seed.",
+            "tagline": "Raw honey met with nigella sativa — the classic pairing.",
             "price": "",
-            "ctaLabel": "Reserve a jar",
-            "ctaHref": "#contact",
+            "ctaLabel": "Discover",
+            "ctaHref": "/products/black-seed-honey/",
             "image": "/media/black-seed.webp",
             "look": "night"
           },
           {
-            "name": "Ajwa Dates",
-            "tagline": "The dates of Madinah — soft, dark and unhurried.",
+            "name": "Ajwa Al-Madina Dates",
+            "tagline": "The dates of Madinah — certified, boxed and sealed at origin.",
             "price": "",
-            "ctaLabel": "Reserve a box",
-            "ctaHref": "#contact",
-            "image": "/media/ajwa-dates.webp",
+            "ctaLabel": "Discover",
+            "ctaHref": "/products/ajwa-dates/",
+            "image": "/media/products/ajwa-box.webp",
             "look": "olive"
           },
           {
-            "name": "The Sunnah Set",
-            "tagline": "Sidr honey, black seed and ajwa together — a gift of the tradition.",
+            "name": "Blessed Super Mix",
+            "tagline": "Twenty-four traditional herbs in one honey-based blend.",
             "price": "",
-            "ctaLabel": "Reserve a set",
-            "ctaHref": "#contact",
-            "image": "/media/sunnah-set.webp",
+            "ctaLabel": "Discover",
+            "ctaHref": "/products/blessed-super-mix/",
+            "image": "/media/products/super-mix.webp",
             "look": "gold"
           }
         ]
@@ -121,15 +112,6 @@
         ],
         "image": "/media/warehouse-v2.webp",
         "imageAlt": "Wooden crates and drums stacked in a warm, sunlit import warehouse"
-      }
-    },
-    {
-      "type": "ImageBand",
-      "props": {
-        "id": "ImageBand-valley",
-        "image": "/media/sidr-valley.webp",
-        "alt": "Ancient sidr trees in a golden valley at sunset",
-        "caption": "Where the sidr blossoms"
       }
     },
     {
